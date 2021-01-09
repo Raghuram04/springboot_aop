@@ -44,7 +44,7 @@ public class EmployeeController {
 	// update the employee depart using emp id
 
 	@PutMapping("/employee/{empid}")
-	public String updateEmployee(@PathVariable("empid") String empId, @RequestParam("deptname") String deptName) {
+	public String updateEmployee(@PathVariable("empid") String empId, @RequestParam("deptName") String deptName) {
 		return dummyService.updateEmployeeDept(empId, deptName);
 	}
 	
